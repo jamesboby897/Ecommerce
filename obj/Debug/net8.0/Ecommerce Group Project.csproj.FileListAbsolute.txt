@@ -1,0 +1,30 @@
+C:\Users\James\Desktop\Ecommerce Group Project\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\James\Desktop\Ecommerce Group Project\bin\Debug\net8.0\appsettings.json
+C:\Users\James\Desktop\Ecommerce Group Project\bin\Debug\net8.0\Ecommerce Group Project.staticwebassets.runtime.json
+C:\Users\James\Desktop\Ecommerce Group Project\bin\Debug\net8.0\Ecommerce Group Project.exe
+C:\Users\James\Desktop\Ecommerce Group Project\bin\Debug\net8.0\Ecommerce Group Project.deps.json
+C:\Users\James\Desktop\Ecommerce Group Project\bin\Debug\net8.0\Ecommerce Group Project.runtimeconfig.json
+C:\Users\James\Desktop\Ecommerce Group Project\bin\Debug\net8.0\Ecommerce Group Project.dll
+C:\Users\James\Desktop\Ecommerce Group Project\bin\Debug\net8.0\Ecommerce Group Project.pdb
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.AssemblyInfoInputs.cache
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.AssemblyInfo.cs
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.csproj.CoreCompileInputs.cache
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.RazorAssemblyInfo.cache
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.RazorAssemblyInfo.cs
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\staticwebassets\msbuild.Ecommerce Group Project.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\staticwebassets\msbuild.build.Ecommerce Group Project.props
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Ecommerce Group Project.props
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Ecommerce Group Project.props
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\scopedcss\bundle\Ecommerce Group Project.styles.css
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\scopedcss\projectbundle\Ecommerce Group Project.bundle.scp.css
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.dll
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\refint\Ecommerce Group Project.dll
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.pdb
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\Ecommerce Group Project.genruntimeconfig.cache
+C:\Users\James\Desktop\Ecommerce Group Project\obj\Debug\net8.0\ref\Ecommerce Group Project.dll
