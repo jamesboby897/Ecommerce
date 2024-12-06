@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Study\\Semester4\\Adv_DotNet\\Group Project\\Code\\Ecommerce\\Ecommerce Group Project.csproj": {}
+    "C:\\Users\\James\\Desktop\\Ecommerce\\Ecommerce Group Project.csproj": {}
   },
   "projects": {
-    "C:\\Study\\Semester4\\Adv_DotNet\\Group Project\\Code\\Ecommerce\\Ecommerce Group Project.csproj": {
+    "C:\\Users\\James\\Desktop\\Ecommerce\\Ecommerce Group Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Study\\Semester4\\Adv_DotNet\\Group Project\\Code\\Ecommerce\\Ecommerce Group Project.csproj",
+        "projectUniqueName": "C:\\Users\\James\\Desktop\\Ecommerce\\Ecommerce Group Project.csproj",
         "projectName": "Ecommerce Group Project",
-        "projectPath": "C:\\Study\\Semester4\\Adv_DotNet\\Group Project\\Code\\Ecommerce\\Ecommerce Group Project.csproj",
-        "packagesPath": "C:\\Users\\sajit\\.nuget\\packages\\",
-        "outputPath": "C:\\Study\\Semester4\\Adv_DotNet\\Group Project\\Code\\Ecommerce\\obj\\",
+        "projectPath": "C:\\Users\\James\\Desktop\\Ecommerce\\Ecommerce Group Project.csproj",
+        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\James\\Desktop\\Ecommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sajit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +46,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -53,11 +62,19 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
@@ -79,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
