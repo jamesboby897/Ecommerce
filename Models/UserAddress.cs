@@ -5,7 +5,7 @@ public class UserAddress
 {
     [Key]
     public int AddressID { get; set; }
-    public int UserID { get; set; }
+    public string UserID { get; set; }
     public User User { get; set; }
     public string AddressLine1 { get; set; }
     public string AddressLine2 { get; set; }

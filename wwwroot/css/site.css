@@ -19,4 +19,26 @@ html {
 
 body {
   margin-bottom: 60px;
+  font-family: Roboto, sans-serif;
+}
+
+/*tab navigation style*/
+
+.auth-card .card-header{
+    padding: 0 0 12px 0;
+}
+.auth-card ul.nav-tabs {
+    margin: 0 0 -12px 0;
+}
+.auth-card li.nav-item {
+    width: 50%;
+}
+.auth-card a.nav-link {
+    font-size: 1rem;
+    color: #495057;
+    text-align:center;
+    padding:1rem;
+}
+.auth-card .card-body {
+    padding: 10px 20px;
 }
