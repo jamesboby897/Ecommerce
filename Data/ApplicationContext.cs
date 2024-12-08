@@ -27,6 +27,12 @@ public class ApplicationContext : IdentityDbContext<User>
             .WithMany(c => c.Products)
             .HasForeignKey(p => p.CategoryID);
 
+        modelBuilder.Entity<ProductImage>()
+            .HasOne(pi => pi.Product)
+            .WithMany(p => p.ProductImages)
+            .HasForeignKey(pi => pi.ProductID)
+            .OnDelete(DeleteBehavior.Cascade);
+
         modelBuilder.Entity<CartItem>()
             .HasKey(ci => new { ci.UserID, ci.ProductID });
 

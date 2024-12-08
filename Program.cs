@@ -36,6 +36,12 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "productDetail",
+    pattern: "Product/Detail/{id?}",
+    defaults: new { controller = "Product", action = "Detail" });
+
 app.MapRazorPages();
 
 using (var scope = app.Services.CreateScope())
@@ -46,7 +52,7 @@ using (var scope = app.Services.CreateScope())
 
     foreach (var role in roles)
     {
-        if(!await roleManager.RoleExistsAsync(role))
+        if (!await roleManager.RoleExistsAsync(role))
             await roleManager.CreateAsync(new IdentityRole(role));
     }
 }
@@ -58,7 +64,7 @@ using (var scope = app.Services.CreateScope())
     string adminEmail = "admin@electrohub.com";
     string adminPassword = "Electro12!";
 
-    if(await userManager.FindByEmailAsync(adminEmail) == null)
+    if (await userManager.FindByEmailAsync(adminEmail) == null)
     {
         var user = new User
         {

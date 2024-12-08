@@ -1,0 +1,48 @@
+﻿@model Ecommerce_Group_Project.Models.Product
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Product Image Section -->
+        <div class="col-md-6">
+            <div class="card">
+                <img src="@Model.ImageURL" class="card-img-top" alt="@Model.Name" />
+                <div class="card-body">
+                    @if (Model.ProductImages != null && Model.ProductImages.Any())
+                    {
+                        <div class="row">
+                            @foreach (var image in Model.ProductImages)
+                            {
+                                <div class="col-4 mb-2">
+                                    <img src="@image.ImageURL" class="img-fluid img-thumbnail" alt="@Model.Name" />
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="col-md-6">
+            <h1 class="display-4">@Model.Name</h1>
+            <p class="text-muted">@Model.Category.Name</p>
+            <p class="lead">@Model.Description</p>
+            <p><strong>Price:</strong> $@Model.Price</p>
+            <p><strong>Stock Quantity:</strong> @Model.StockQuantity</p>
+            <p><strong>Created At:</strong> @Model.CreatedAt.ToShortDateString()</p>
+            <p><strong>Updated At:</strong> @Model.UpdatedAt.ToShortDateString()</p>
+
+            <!-- Add to Cart Button -->
+            <form method="post" asp-controller="Cart" asp-action="AddToCart" class="mt-4">
+                <input type="hidden" name="productId" value="@Model.ProductID" />
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
