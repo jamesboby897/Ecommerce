@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|d:\\conestoga\\sem4\\adv. dotnet\\ecommerce\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|d:\\conestoga\\sem4\\adv. dotnet\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|d:\\conestoga\\sem4\\adv. dotnet\\ecommerce\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|d:\\conestoga\\sem4\\adv. dotnet\\ecommerce\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|d:\\conestoga\\sem4\\adv. dotnet\\ecommerce\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:46:57.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-08T20:40:43.728Z",
+              "WhenOpened": "2024-12-09T03:01:09.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Models\\ProductImage.cs",
+              "RelativeDocumentMoniker": "Models\\ProductImage.cs",
+              "ToolTip": "D:\\Conestoga\\Sem4\\Adv. DotNet\\Ecommerce\\Models\\ProductImage.cs",
+              "RelativeToolTip": "Models\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T20:20:11.962Z",
+              "WhenOpened": "2024-12-09T02:40:51.317Z",
               "EditorCaption": ""
             }
           ]
