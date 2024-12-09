@@ -1,6 +1,8 @@
 using Ecommerce_Group_Project.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Diagnostics;
 
 namespace Ecommerce_Group_Project.Controllers
@@ -9,15 +11,22 @@ namespace Ecommerce_Group_Project.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var featuredProducts = _context.Products
+                                            .Where(p => p.IsFeatured)
+                                            .Take(6)
+                                            .ToList();
+
+            return View(featuredProducts);
         }
 
         public IActionResult Privacy()
@@ -30,5 +39,7 @@ namespace Ecommerce_Group_Project.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+       
     }
 }
