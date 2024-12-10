@@ -5,7 +5,7 @@
 }
 
 <div class="container">
-    <h2>Featured Products</h2>
+    <h2>Our Products</h2>
     <div class="row">
         @foreach (var product in Model)
         {
@@ -15,7 +15,7 @@
                         <div class="card-body">
                             <h5 class="card-title">@product.Name</h5>
                             <p class="card-text">@product.Description</p>
-                            <p class="card-text">${@product.Price}</p>
+                            <p class="card-text">$ @product.Price</p>
                             <a href="@Url.Action("Detail", "Product", new { id = product.ProductID })" class="btn btn-primary">View Details</a>
                         </div>
                     </div>

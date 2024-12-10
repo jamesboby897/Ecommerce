@@ -21,10 +21,7 @@ namespace Ecommerce_Group_Project.Controllers
 
         public IActionResult Index()
         {
-            var featuredProducts = _context.Products
-                                            .Where(p => p.IsFeatured)
-                                            .Take(6)
-                                            .ToList();
+            var featuredProducts = _context.Products.ToList();
 
             return View(featuredProducts);
         }
