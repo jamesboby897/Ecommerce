@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\piyus\\Ecommerce\\Ecommerce Group Project.csproj": {}
+    "C:\\Users\\64262\\OneDrive\\桌面\\dotnet\\Ecommerce Group Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\piyus\\Ecommerce\\Ecommerce Group Project.csproj": {
+    "C:\\Users\\64262\\OneDrive\\桌面\\dotnet\\Ecommerce Group Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\piyus\\Ecommerce\\Ecommerce Group Project.csproj",
+        "projectUniqueName": "C:\\Users\\64262\\OneDrive\\桌面\\dotnet\\Ecommerce Group Project.csproj",
         "projectName": "Ecommerce Group Project",
-        "projectPath": "C:\\Users\\piyus\\Ecommerce\\Ecommerce Group Project.csproj",
-        "packagesPath": "C:\\Users\\piyus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\piyus\\Ecommerce\\obj\\",
+        "projectPath": "C:\\Users\\64262\\OneDrive\\桌面\\dotnet\\Ecommerce Group Project.csproj",
+        "packagesPath": "C:\\Users\\64262\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\64262\\OneDrive\\桌面\\dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\piyus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\64262\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
