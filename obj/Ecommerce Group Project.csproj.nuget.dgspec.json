@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\DotNet\\Ecommerce\\Ecommerce Group Project.csproj": {}
+    "F:\\Assignment\\ecom\\Ecommerce Group Project.csproj": {}
   },
   "projects": {
-    "F:\\DotNet\\Ecommerce\\Ecommerce Group Project.csproj": {
+    "F:\\Assignment\\ecom\\Ecommerce Group Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\DotNet\\Ecommerce\\Ecommerce Group Project.csproj",
+        "projectUniqueName": "F:\\Assignment\\ecom\\Ecommerce Group Project.csproj",
         "projectName": "Ecommerce Group Project",
-        "projectPath": "F:\\DotNet\\Ecommerce\\Ecommerce Group Project.csproj",
+        "projectPath": "F:\\Assignment\\ecom\\Ecommerce Group Project.csproj",
         "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
-        "outputPath": "F:\\DotNet\\Ecommerce\\obj\\",
+        "outputPath": "F:\\Assignment\\ecom\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
