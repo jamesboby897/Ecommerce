@@ -1,5 +1,4 @@
-﻿using Ecommerce_Group_Project.Migrations;
-using Ecommerce_Group_Project.Models;
+﻿using Ecommerce_Group_Project.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
