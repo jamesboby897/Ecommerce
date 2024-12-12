@@ -82,15 +82,16 @@ namespace Ecommerce_Group_Project.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateCartItem(int cartItemId, int quantity)
         {
-            if (quantity < 1)
+            // Validate quantity range
+            if (quantity < 1 || quantity > 10)
             {
-                ViewData["ErrorMessage"] = "Quantity must be at least 1.";
+                ViewData["ErrorMessage"] = "Quantity must be between 1 and 10.";
                 return RedirectToAction("Index");
             }
 
             // Find the cart item
             var cartItem = await _context.CartItems
-                .Include(c => c.Product) // Include the product to validate stock
+                .Include(c => c.Product) // Include product details for stock validation
                 .FirstOrDefaultAsync(c => c.CartItemID == cartItemId);
 
             if (cartItem == null)
@@ -99,8 +100,8 @@ namespace Ecommerce_Group_Project.Controllers
                 return RedirectToAction("Index");
             }
 
-            // Update the quantity (limit to stock quantity if necessary)
-            cartItem.Quantity = Math.Min(quantity, cartItem.Product.StockQuantity);
+            // Update the quantity
+            cartItem.Quantity = quantity;
             _context.CartItems.Update(cartItem);
 
             // Save changes
@@ -108,6 +109,8 @@ namespace Ecommerce_Group_Project.Controllers
 
             return RedirectToAction("Index");
         }
+
+
 
         // Remove item from the cart
         [HttpPost]

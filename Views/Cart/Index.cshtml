@@ -25,13 +25,21 @@
                             @Html.AntiForgeryToken()
                             <input type="hidden" name="cartItemId" value="@item.CartItemID" />
                             <div class="input-group">
-                                <input type="number" name="quantity" value="@item.Quantity" min="1" max="@item.Product.StockQuantity" class="form-control" />
+                                <input type="number"
+                                       name="quantity"
+                                       value="@item.Quantity"
+                                       min="1"
+                                       max="10"
+                                       class="form-control"
+                                       oninput="if (this.value < 1) this.value = 1; if (this.value > 10) this.value = 10;" />
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-primary btn-sm">Update</button>
                                 </div>
                             </div>
                         </form>
                     </td>
+
+
                     <td>@(item.Product.Price * item.Quantity)</td>
                     <td>
                         <form asp-action="RemoveFromCart" method="post">
