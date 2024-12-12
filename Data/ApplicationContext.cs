@@ -58,5 +58,42 @@ public class ApplicationContext : IdentityDbContext<User>
             .HasOne(od => od.Product)
             .WithMany(p => p.OrderDetails)
             .HasForeignKey(od => od.ProductID);
+
+        // Seed Data
+        modelBuilder.Entity<Category>().HasData(
+            new Category { CategoryID = 1, Name = "Laptops", Description = "All kinds of laptops, from gaming to business." },
+            new Category { CategoryID = 2, Name = "Smartphones", Description = "Latest smartphones from top brands." },
+            new Category { CategoryID = 3, Name = "Accessories", Description = "Electronic accessories including chargers and headphones." }
+        );
+
+        modelBuilder.Entity<Product>().HasData(
+            new Product
+            {
+                ProductID = 1,
+                Name = "Dell XPS 13",
+                Description = "High-performance laptop with 13-inch display",
+                Price = 1200.99m,
+                CategoryID = 1,
+                ImageURL = "https://example.com/images/dellxps13.jpg"
+            },
+            new Product
+            {
+                ProductID = 2,
+                Name = "iPhone 14",
+                Description = "Latest Apple smartphone with advanced features",
+                Price = 999.99m,
+                CategoryID = 2,
+                ImageURL = "https://example.com/images/iphone14.jpg"
+            },
+            new Product
+            {
+                ProductID = 3,
+                Name = "Wireless Mouse",
+                Description = "Ergonomic wireless mouse with precision tracking",
+                Price = 25.99m,
+                CategoryID = 3,
+                ImageURL = "https://example.com/images/wirelessmouse.jpg"
+            }
+        );
     }
 }

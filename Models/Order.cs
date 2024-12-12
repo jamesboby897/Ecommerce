@@ -1,17 +1,45 @@
-﻿namespace Ecommerce_Group_Project.Models
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+namespace Ecommerce_Group_Project.Models
 {
     public class Order
     {
+        [Key]
         public int OrderID { get; set; }
-        public string UserID { get; set; }
-        public User User { get; set; }
-        public DateTime OrderDate { get; set; }
-        public decimal TotalAmount { get; set; }
-        public string Status { get; set; }
+
+        public string UserID { get; set; } 
+
+        [Required]
         public string ShippingAddress { get; set; }
-        public string PaymentMethod { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-        public ICollection<OrderDetail> OrderDetails { get; set; }
+
+        [Required]
+        public string BillingAddress { get; set; }
+
+        [Required]
+        public string FirstName { get; set; }
+
+        [Required]
+        public string LastName { get; set; }
+
+        [Required]
+        public string Phone { get; set; }
+
+        [Required]
+        public string CardNumber { get; set; }
+
+        [Required]
+        [StringLength(3)]
+        public string CVV { get; set; }
+
+        [Required]
+        public DateTime ExpiryDate { get; set; }
+
+        public decimal TotalAmount { get; set; }
+
+        public DateTime OrderDate { get; set; }
+
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }
