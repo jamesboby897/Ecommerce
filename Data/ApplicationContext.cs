@@ -32,9 +32,18 @@ public class ApplicationContext : IdentityDbContext<User>
             .WithMany(p => p.ProductImages)
             .HasForeignKey(pi => pi.ProductID)
             .OnDelete(DeleteBehavior.Cascade);
+        modelBuilder.Entity<CartItem>()
+    .HasKey(ci => ci.CartItemID);
 
         modelBuilder.Entity<CartItem>()
-            .HasKey(ci => new { ci.UserID, ci.ProductID });
+            .Property(ci => ci.CartItemID)
+            .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<CartItem>()
+            .HasIndex(ci => new { ci.UserID, ci.ProductID })
+            .IsUnique();
+        //modelBuilder.Entity<CartItem>()
+        //    .HasKey(ci => new { ci.UserID, ci.ProductID });
 
         modelBuilder.Entity<CartItem>()
             .HasOne(ci => ci.User)
