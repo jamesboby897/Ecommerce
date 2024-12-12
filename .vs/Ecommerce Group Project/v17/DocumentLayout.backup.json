@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "F:\\Assignment\\ecom\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\views\\checkout\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:views\\checkout\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,24 +31,8 @@
       "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\views\\checkout\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:views\\checkout\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\models\\useraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:models\\useraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0911A232-DD85-4DE6-9E4B-C65C8A8B1090}|Ecommerce Group Project.csproj|f:\\assignment\\ecom\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -94,86 +94,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "F:\\Assignment\\ecom\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "F:\\Assignment\\ecom\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T05:53:07.385Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\Assignment\\ecom\\Views\\Checkout\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Checkout\\Index.cshtml",
-              "ToolTip": "F:\\Assignment\\ecom\\Views\\Checkout\\Index.cshtml",
-              "RelativeToolTip": "Views\\Checkout\\Index.cshtml",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAkwIgAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T05:48:39.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CheckoutController.cs",
-              "DocumentMoniker": "F:\\Assignment\\ecom\\Controllers\\CheckoutController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CheckoutController.cs",
-              "ToolTip": "F:\\Assignment\\ecom\\Controllers\\CheckoutController.cs",
-              "RelativeToolTip": "Controllers\\CheckoutController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAkwIsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T05:48:04.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Order.cs",
-              "DocumentMoniker": "F:\\Assignment\\ecom\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "F:\\Assignment\\ecom\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowB0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T05:31:33.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\Assignment\\ecom\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
-              "ToolTip": "F:\\Assignment\\ecom\\Views\\Cart\\Index.cshtml*",
-              "RelativeToolTip": "Views\\Cart\\Index.cshtml*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T05:11:53.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CartController.cs",
               "DocumentMoniker": "F:\\Assignment\\ecom\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Controllers\\CartController.cs",
-              "ToolTip": "F:\\Assignment\\ecom\\Controllers\\CartController.cs*",
-              "RelativeToolTip": "Controllers\\CartController.cs*",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAiwGUAAAAAAAAAAAAAAA==",
+              "ToolTip": "F:\\Assignment\\ecom\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T04:24:08.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "F:\\Assignment\\ecom\\Data\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationContext.cs",
@@ -182,6 +120,32 @@
               "ViewState": "AgIAACoAAAAAAAAAAAAowBEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T04:13:32.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Assignment\\ecom\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkout\\Index.cshtml",
+              "ToolTip": "F:\\Assignment\\ecom\\Views\\Checkout\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Checkout\\Index.cshtml*",
+              "ViewState": "AgIAANUAAAAAAAAAAAAkwPIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T05:48:39.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "F:\\Assignment\\ecom\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CheckoutController.cs",
+              "ToolTip": "F:\\Assignment\\ecom\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAwwB8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:48:04.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -209,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AdminController.cs",
               "DocumentMoniker": "F:\\Assignment\\ecom\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -222,19 +186,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\Assignment\\ecom\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "F:\\Assignment\\ecom\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T04:12:54.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OrderConfirmation.cshtml",
               "DocumentMoniker": "F:\\Assignment\\ecom\\Views\\Checkout\\OrderConfirmation.cshtml",
               "RelativeDocumentMoniker": "Views\\Checkout\\OrderConfirmation.cshtml",
               "ToolTip": "F:\\Assignment\\ecom\\Views\\Checkout\\OrderConfirmation.cshtml",
               "RelativeToolTip": "Views\\Checkout\\OrderConfirmation.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAGMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-12T08:04:26.644Z"
+              "WhenOpened": "2024-12-12T08:04:26.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Assignment\\ecom\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "F:\\Assignment\\ecom\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T05:11:53.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Order.cs",
+              "DocumentMoniker": "F:\\Assignment\\ecom\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "F:\\Assignment\\ecom\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowB0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:31:33.848Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\Assignment\\ecom\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "F:\\Assignment\\ecom\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:53:07.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UserAddress.cs",
               "DocumentMoniker": "F:\\Assignment\\ecom\\Models\\UserAddress.cs",
               "RelativeDocumentMoniker": "Models\\UserAddress.cs",
@@ -327,18 +343,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-12T04:12:54.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "F:\\Assignment\\ecom\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "F:\\Assignment\\ecom\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T04:12:54.631Z"
             },
             {
               "$type": "Document",
