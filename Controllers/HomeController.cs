@@ -1,7 +1,10 @@
+using Ecommerce_Group_Project.Controllers;
 using Ecommerce_Group_Project.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Diagnostics;
 
 namespace Ecommerce_Group_Project.Controllers
@@ -10,24 +13,15 @@ namespace Ecommerce_Group_Project.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly UserManager<User> _userManager;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<User> userManager)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _userManager = userManager;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var user = await _userManager.GetUserAsync(User);
-
-            if (user != null && await _userManager.IsInRoleAsync(user, "Admin"))
-            {
-                return RedirectToAction("Index", "Admin"); // Redirect to Admin page
-            }
-
-            return View(); // Default view for non-admin users
+            return View();
         }
 
         public IActionResult Privacy()
@@ -40,5 +34,7 @@ namespace Ecommerce_Group_Project.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
     }
 }
