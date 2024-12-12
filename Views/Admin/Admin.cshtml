@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Ecommerce_Group_Project.Models.AdminPanelViewModel
+
+<div class="container mt-5">
+    <h2>Admin Panel</h2>
+    <div class="btn-group" role="group">
+        <button id="btnProducts" class="btn btn-primary" onclick="showSection('productsSection')">Manage Products</button>
+        <button id="btnCategories" class="btn btn-secondary" onclick="showSection('categoriesSection')">Manage Categories</button>
+    </div>
+
+    <hr />
+
+    <!-- Products Section -->
+    <div id="productsSection" style="display: block;">
+        <h3>Products</h3>
+        <button class="btn btn-success mb-3" onclick="toggleForm('productForm')">Add New Product</button>
+        <form id="productForm"
+              asp-action="@((Model.NewProduct != null && Model.NewProduct.ProductID == 0) ? "CreateProduct" : "EditProduct")"
+              method="post"
+              enctype="multipart/form-data">
+            <input type="hidden" asp-for="NewProduct.ProductID" />
+            <div class="form-group">
+                <label>Name</label>
+                <input asp-for="NewProduct.Name" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <textarea asp-for="NewProduct.Description" class="form-control" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Price</label>
+                <input asp-for="NewProduct.Price" type="number" step="0.01" class="form-control" required/>
+            </div>
+            <div class="form-group">
+                <label>Stock Quantity</label>
+                <input asp-for="NewProduct.StockQuantity" type="number" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label>Category</label>
+                <select asp-for="NewProduct.CategoryID" asp-items="@(new SelectList(Model.Categories, "CategoryID", "Name"))" class="form-control">
+                    <option value="">Select a category</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Image</label>
+                <input type="file" name="ImageFile" class="form-control" />
+            </div>
+            <div class="form-group form-check">
+                <input asp-for="NewProduct.IsFeatured" type="checkbox" class="form-check-input" />
+                <label class="form-check-label">Featured Product</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Save Product</button>
+        </form>
+
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Products != null)
+                {
+                    @foreach (var product in Model.Products)
+                    {
+                        <tr>
+                            <td>@product.Name</td>
+                            <td>@product.Category?.Name</td>
+                            <td>@product.Price</td>
+                            <td>@product.StockQuantity</td>
+                            <td>
+                                <a asp-action="EditProduct" asp-route-id="@product.ProductID" class="btn btn-warning">Edit</a>
+                                <a asp-action="DeleteProduct" asp-route-id="@product.ProductID" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">No products available</td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+
+    <!-- Categories Section -->
+    <div id="categoriesSection" style="display: none;">
+        <h3>Categories</h3>
+        <button class="btn btn-success mb-3" onclick="toggleForm('categoryForm')">Add New Category</button>
+        <form id="categoryForm"
+              asp-action="@((Model.NewCategory != null && Model.NewCategory.CategoryID == 0) ? "CreateCategory" : "EditCategory")"
+              method="post"
+              asp-prefix="NewCategory"
+              style="display: none;">
+            <input type="hidden" asp-for="NewCategory.CategoryID" />
+            <div class="form-group">
+                <label asp-for="NewCategory.Name"></label>
+                <input asp-for="NewCategory.Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="NewCategory.Description"></label>
+                <input asp-for="NewCategory.Description" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Save Category</button>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model.Categories)
+                {
+                    <tr>
+                        <td>@category.Name</td>
+                        <td>@category.Description</td>
+                        <td>
+                            <a asp-action="EditCategory" asp-route-id="@category.CategoryID" class="btn btn-warning">Edit</a>
+                            <a asp-action="DeleteCategory" asp-route-id="@category.CategoryID" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function showSection(sectionId) {
+        document.getElementById('productsSection').style.display = 'none';
+        document.getElementById('categoriesSection').style.display = 'none';
+        document.getElementById(sectionId).style.display = 'block';
+
+        document.getElementById('btnProducts').classList.remove('btn-primary');
+        document.getElementById('btnCategories').classList.remove('btn-primary');
+
+        if (sectionId === 'productsSection') {
+            document.getElementById('btnProducts').classList.add('btn-primary');
+        } else {
+            document.getElementById('btnCategories').classList.add('btn-primary');
+        }
+    }
+
+    function toggleForm(formId) {
+        const form = document.getElementById(formId);
+        if (form.style.display === 'none') {
+            form.style.display = 'block';
+        } else {
+            form.style.display = 'none';
+        }
+    }
+</script>
+
+

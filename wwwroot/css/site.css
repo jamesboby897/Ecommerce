@@ -42,3 +42,95 @@ body {
 .auth-card .card-body {
     padding: 10px 20px;
 }
+:root {
+    /* Soft, Cool Color Palette */
+    --color-background: #f4f7fa;
+    --color-white: #ffffff;
+    --color-text-primary: #2c3e50;
+    --color-text-secondary: #637484;
+    --color-border: #e6eaee;
+    /* Soft, Muted Colors */
+    --color-primary: #5e81ac;
+    --color-success: #a3be8c;
+    --color-info: #88c0d0;
+    --color-warning: #ebcb8b;
+    --color-danger: #bf616a;
+    /* Subtle Shadows and Transitions */
+    --shadow-subtle: 0 4px 10px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Inter', 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+.container {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-subtle);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-secondary {
+    background-color: var(--color-border);
+    color: var(--color-text-secondary);
+    border-color: transparent;
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    border-color: var(--color-success);
+}
+
+.btn-warning {
+    background-color: var(--color-warning);
+    border-color: var(--color-warning);
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.form-control {
+    border-color: var(--color-border);
+    background-color: var(--color-white);
+}
+
+    .form-control:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 3px rgba(94, 129, 172, 0.1);
+    }
+
+.table {
+    background-color: var(--color-white);
+}
+
+    .table thead {
+        background-color: var(--color-background);
+    }
+
+.table-hover tbody tr:hover {
+    background-color: rgba(94, 129, 172, 0.05);
+}
