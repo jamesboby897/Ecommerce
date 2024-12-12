@@ -39,5 +39,11 @@ namespace Ecommerce_Group_Project.Controllers
 
             return View(product);
         }
+
+        public async Task<IActionResult> Index()
+        {
+            var products = await _context.Products.ToListAsync();
+            return View(products);
+        }
     }
 }

@@ -1,0 +1,126 @@
+﻿@model Ecommerce_Group_Project.Models.Order
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .card h3 {
+        margin-top: 0;
+        color: #0056b3;
+        border-bottom: 2px solid #e9ecef;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card p {
+        margin: 10px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    table th {
+        background-color: #f8f9fa;
+        color: #007bff;
+    }
+
+    .subtotal, .total {
+        font-weight: bold;
+    }
+
+    .subtotal td, .total td {
+        text-align: right;
+    }
+
+    .total td {
+        font-size: 1.1em;
+    }
+</style>
+
+<div class="container">
+    <h2>Order Confirmation</h2>
+
+    <!-- Order Details Section -->
+    <div class="card">
+        <h3>Order Details</h3>
+        <p><strong>Order ID:</strong> @Model.OrderID</p>
+        <p><strong>Order Date:</strong> @Model.OrderDate.ToString("f")</p>
+        <p><strong>Total Amount:</strong> @Model.TotalAmount.ToString("C")</p>
+    </div>
+
+    <!-- Shipping & Billing Section -->
+    <div class="card">
+        <h3>Shipping & Billing Information</h3>
+        <p><strong>Shipping Address:</strong> @Model.ShippingAddress</p>
+        <p><strong>Billing Address:</strong> @Model.BillingAddress</p>
+    </div>
+
+    <!-- Order Items Section -->
+    <div class="card">
+        <h3>Order Items</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.OrderDetails)
+                {
+                    <tr>
+                        <td>@item.Product.Name</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Price.ToString("C")</td>
+                        <td>@(item.Quantity * item.Price)</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr class="total">
+                    <td colspan="3">Total</td>
+                    <td>@Model.TotalAmount.ToString("C")</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

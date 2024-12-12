@@ -1,5 +1,4 @@
-﻿using Ecommerce_Group_Project.Migrations;
-using Ecommerce_Group_Project.Models;
+﻿using Ecommerce_Group_Project.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,69 +13,107 @@ namespace Ecommerce_Group_Project.Controllers
             _context = context;
         }
 
+        // Display the shopping cart
         public async Task<IActionResult> Index()
         {
             var userId = User.Identity.Name;
+
+            // Validate the user
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == userId);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account"); // Redirect to login if user not found
+            }
+
+            // Fetch cart items for the user
             var cartItems = await _context.CartItems
-                .Include(c => c.Product)
-                .Include(c => c.User)
-                .Where(c => c.UserID == userId)
+                .Include(c => c.Product) // Include Product details
+                .Where(c => c.UserID == user.Id)
                 .ToListAsync();
+
             return View(cartItems);
         }
 
+        // Add item to the cart
         [HttpPost]
         public async Task<IActionResult> AddToCart(int productId, int quantity = 1)
         {
             var userId = User.Identity.Name;
 
+            // Validate the user
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == userId);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account"); // Redirect to login if user not found
+            }
+
+            // Check if the product is already in the cart
             var cartItem = await _context.CartItems
-                .FirstOrDefaultAsync(c => c.UserID == userId && c.ProductID == productId);
+                .FirstOrDefaultAsync(c => c.UserID == user.Id && c.ProductID == productId);
 
             if (cartItem == null)
             {
+                // Add a new cart item
                 cartItem = new CartItem
                 {
-                    UserID = userId,
+                    UserID = user.Id,
                     ProductID = productId,
                     Quantity = Math.Min(quantity, 99),
                     CreatedAt = DateTime.Now
                 };
-                await _context.CartItems.AddAsync(cartItem);
+
+                _context.CartItems.Add(cartItem);
             }
             else
             {
-                cartItem.Quantity += Math.Min(cartItem.Quantity + quantity, 99);
+                // Update the quantity of an existing cart item
+                cartItem.Quantity += quantity;
+                cartItem.Quantity = Math.Min(cartItem.Quantity, 99); // Cap at 99
             }
 
+            // Save changes to the database
             await _context.SaveChangesAsync();
 
-
-            return RedirectToAction("Index");
+            // Redirect back to the cart page
+            return RedirectToAction("Index", "Cart");
         }
 
+        // Update the quantity of a cart item
         [HttpPost]
         public async Task<IActionResult> UpdateCartItem(int cartItemId, int quantity)
         {
-            var userId = User.Identity.Name;
-            var cartItem = await _context.CartItems
-                 .FirstOrDefaultAsync(c => c.UserID == userId && c.CartItemID == cartItemId);
-
-            if (cartItem != null)
+            if (quantity < 1)
             {
-                cartItem.Quantity = Math.Min(quantity, 99);
-                await _context.SaveChangesAsync();
+                ViewData["ErrorMessage"] = "Quantity must be at least 1.";
+                return RedirectToAction("Index");
             }
+
+            // Find the cart item
+            var cartItem = await _context.CartItems
+                .Include(c => c.Product) // Include the product to validate stock
+                .FirstOrDefaultAsync(c => c.CartItemID == cartItemId);
+
+            if (cartItem == null)
+            {
+                ViewData["ErrorMessage"] = "Cart item not found.";
+                return RedirectToAction("Index");
+            }
+
+            // Update the quantity (limit to stock quantity if necessary)
+            cartItem.Quantity = Math.Min(quantity, cartItem.Product.StockQuantity);
+            _context.CartItems.Update(cartItem);
+
+            // Save changes
+            await _context.SaveChangesAsync();
+
             return RedirectToAction("Index");
         }
 
+        // Remove item from the cart
         [HttpPost]
         public async Task<IActionResult> RemoveFromCart(int cartItemId)
         {
-            var userId = User.Identity.Name;
-
-            var cartItem = await _context.CartItems
-                .FirstOrDefaultAsync(c => c.UserID == userId && c.CartItemID == cartItemId);
+            var cartItem = await _context.CartItems.FirstOrDefaultAsync(c => c.CartItemID == cartItemId);
 
             if (cartItem != null)
             {

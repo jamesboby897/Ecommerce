@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ecommerce_Group_Project.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20241211202637_InitialCreate")]
+    [Migration("20241212083406_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -73,6 +73,32 @@ namespace Ecommerce_Group_Project.Migrations
                     b.HasKey("CategoryID");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryID = 1,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "All kinds of laptops, from gaming to business.",
+                            Name = "Laptops",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            CategoryID = 2,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Latest smartphones from top brands.",
+                            Name = "Smartphones",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            CategoryID = 3,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Electronic accessories including chargers and headphones.",
+                            Name = "Accessories",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("Ecommerce_Group_Project.Models.Discount", b =>
@@ -115,8 +141,9 @@ namespace Ecommerce_Group_Project.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderID"));
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("BillingAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
@@ -129,23 +156,14 @@ namespace Ecommerce_Group_Project.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("UserID")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("OrderID");
-
-                    b.HasIndex("UserID");
 
                     b.ToTable("Orders");
                 });
@@ -158,7 +176,7 @@ namespace Ecommerce_Group_Project.Migrations
                     b.Property<int>("ProductID")
                         .HasColumnType("int");
 
-                    b.Property<int>("OrderDetailID")
+                    b.Property<int>("OrderItemID")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")
@@ -217,6 +235,47 @@ namespace Ecommerce_Group_Project.Migrations
                     b.HasIndex("CategoryID");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductID = 1,
+                            CategoryID = 1,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "High-performance laptop with 13-inch display",
+                            ImageURL = "https://example.com/images/dellxps13.jpg",
+                            IsFeatured = false,
+                            Name = "Dell XPS 13",
+                            Price = 1200.99m,
+                            StockQuantity = 0,
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            ProductID = 2,
+                            CategoryID = 2,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Latest Apple smartphone with advanced features",
+                            ImageURL = "https://example.com/images/iphone14.jpg",
+                            IsFeatured = false,
+                            Name = "iPhone 14",
+                            Price = 999.99m,
+                            StockQuantity = 0,
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            ProductID = 3,
+                            CategoryID = 3,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ergonomic wireless mouse with precision tracking",
+                            ImageURL = "https://example.com/images/wirelessmouse.jpg",
+                            IsFeatured = false,
+                            Name = "Wireless Mouse",
+                            Price = 25.99m,
+                            StockQuantity = 0,
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("Ecommerce_Group_Project.Models.User", b =>
@@ -559,17 +618,6 @@ namespace Ecommerce_Group_Project.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Ecommerce_Group_Project.Models.Order", b =>
-                {
-                    b.HasOne("Ecommerce_Group_Project.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
 
                     b.Navigation("User");
                 });
